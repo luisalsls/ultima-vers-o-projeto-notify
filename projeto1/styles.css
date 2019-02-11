@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, minmax(100px auto));
+}
+
+header {
+    border-top: 5px solid green;
+    grid-area: header;
+    background-image: url('./d-N-105-psdNotify/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+nav{
+    flex-direction: column;
+
+}
+
+.texto1{
+    margin: 0 0 0 0;
+}
+.texto2{
+    margin: 2px 0 30px 0;
+    
+}
+
+#icone { 
+    display: flex;
+}
+
+.mao{
+    height: 30vw;
+}
+nav{
+    width: 500px;
+}
+
+header nav h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    
+}
+
+span{
+    color: green;
+    font-family: 'Pacifico', cursive;
+}
+
+
+main{
+    grid-area: main;
+}
+
+
+.titulo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#icone{
+     display: flex;
+     justify-content: space-around;
+     width: 50%;
+}
+
+#icone a:hover{
+background-color: green;
+}
+
+#icone a{
+
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 100%;
+    padding: 10px;
+    transition: 1s;
+
+}
+
+  .icone{
+    
+    height: 20vw;
+    align-items: center;
+    padding: 0 20%;
+    background-color: rgba(0, 0, 0, 0, 0.4);
+    border-radius: 50%;
+    }
+
+    .icone div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .icone div p{
+        text-align: center;
+        font-size: 10pt;
+        color: gray;
+        margin: 0;
+    }
+
+.icone div img{ 
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+
+section{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+#email{
+    background-color: lightgray;
+    display: flex;
+    height: 20vw;
+   
+
+}
+
+
+#divdoemail{
+    flex-direction: column;
+    margin: 0 0 0 280px;
+    
+}
+
+
+#divdoemail p{
+    color: gray;
+    font-size: 10pt;
+   
+}
+
+.botao {
+    border: 0.5px solid white;
+    border-radius: 10%;
+    height: 2.5vw;
+    width: 17vw;
+    
+}
+
+#botao1 {
+    background-color: green;
+    border-radius: 10%;
+    border: 0.5px solid green;
+    color: white;
+    font-weight: bold;
+    width: 7vw;
+}
+
+.video iframe{ 
+    margin: 0 200px 0 0;
+}
+
+.section3 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 20%;
+}
+
+.section3 p {
+    font-size: 12px;
+    color: grey;
+    margin: 2% 20%;
+
+}
+
+
+.section3 div a img {
+    
+    border-radius: 50%;
+    padding: 10px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    align-content: space-around;
+    background-color: lightgrey;
+    height: 70px;
+
+}
+
+footer div a{
+    
+margin: 0 10px;
+color: gray;
+}
+
+
+header div .mao {
+    display: none;
+}
+
+@media(min-width:576px){
+    header{
+        flex-direction: row;
+    }
+
+    .titulo{
+        display: block;
+    }
+
+     header div .mao {
+        display: block;
+    }
+}
+
+@media(min-width:768px){
+
+    header{
+        flex-direction: row;
+    }
+}
